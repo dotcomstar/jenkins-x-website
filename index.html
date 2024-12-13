@@ -328,9 +328,10 @@ if (!doNotTrack) {
       color: #f5f5f5;
   }
 
-  i.fa-paperclip.dark-mode{
-      background-color: #008cba !important;
-      color: #f5f5f5;
+  i.fa-paperclip.dark-mode,
+  i.fa-play-circle.dark-mode,
+  i.fa-github.dark-mode{
+      background-color: inherit;
   }
 </style>
 </div>
@@ -857,7 +858,9 @@ docsearch({
     var anav = document.getElementsByClassName('nav-link');
     var intro_bg = document.getElementsByClassName('py-5 bg-light');
     var paperclip = document.getElementsByClassName('fa-paperclip');
-    var elems = [aref,are,anav,intro_bg,paperclip];
+    var play_circle = document.getElementsByClassName('fa-play-circle');
+    var github_icon = document.getElementsByClassName('fa-github');
+    var elems = [aref,are,anav,intro_bg,paperclip,play_circle,github_icon];
 	var switcher = document.getElementsByClassName('js-toggle')[0];
 
 	
